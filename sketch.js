@@ -25,6 +25,7 @@ function preload() {
 function setup() {
   let canvas = createCanvas(800, 1400);
   canvas.parent("data");
+  console.log();
 }
 
 function draw() {
@@ -32,19 +33,19 @@ function draw() {
 
   // Display Light Chart
   if (img1Toggle) {
-    image(img1ToggleImage, 30, 300, 300, 500);  // Display below img1
+    image(img1ToggleImage, 30, 300, 300, 500);  
   }
 
   if (img2Toggle) {
-    image(img2ToggleImage, 175, 300, 300, 500);  // Display below img2
+    image(img2ToggleImage, 175, 300, 300, 500);  
   }
 
   if (img3Toggle) {
-    image(img3ToggleImage, 330, 300, 300, 500);  // Display below img3
+    image(img3ToggleImage, 330, 300, 300, 500);  
   }
 
   if (img4Toggle) {
-    image(img4ToggleImage, 480, 300, 300, 500);  // Display below img4
+    image(img4ToggleImage, 480, 300, 300, 500); 
   }
 
   // Display UFOs
@@ -59,23 +60,23 @@ function draw() {
 }
 
 function mousePressed() {
-  // Toggle visibility of the image below img1
-  if (mouseX >= 80 && mouseX <= 300 && mouseY >= 80 && mouseY <= 300) {
-    img1Toggle = !img1Toggle;  // Toggle visibility
+  // Toggle visibility for result1
+  if (mouseX >= 80 && mouseX <= 350 && mouseY >= 80 && mouseY <= 350) {
+    img1Toggle = !img1Toggle;  
   }
 
-  // Toggle visibility of the image below img2
-  if (mouseX >= 200 && mouseX <= 300 && mouseY >= 200 && mouseY <= 300) {
-    img2Toggle = !img2Toggle;  // Toggle visibility
+  // Toggle visibility for result2
+  if (mouseX >= 175 && mouseX <= 350 && mouseY >= 175 && mouseY <= 350) {
+    img2Toggle = !img2Toggle;  
   }
 
-  // Toggle visibility of the image below img3
-  if (mouseX >= 200 && mouseX <= 300 && mouseY >= 200 && mouseY <= 300) {
-    img3Toggle = !img3Toggle;  // Toggle visibility
+  // Toggle visibility for result3
+  if (mouseX >= 330 && mouseX <= 350 && mouseY >= 330 && mouseY <= 350) {
+    img3Toggle = !img3Toggle;  
   }
 
-  // Toggle visibility of the image below img4
-  if (mouseX >= 200 && mouseX <= 300 && mouseY >= 200 && mouseY <= 300) {
-    img4Toggle = !img4Toggle;  // Toggle visibility
+  // Toggle visibility for result4
+  if (mouseX >= 550 && mouseX <= 350 && mouseY >= 550 && mouseY <= 350) {
+    img4Toggle = !img4Toggle;  
   }
 }
