@@ -25,7 +25,6 @@ function preload() {
 function setup() {
   let canvas = createCanvas(800, 1400);
   canvas.parent("data");
-  console.log();
 }
 
 function draw() {
@@ -33,19 +32,19 @@ function draw() {
 
   // Display Light Chart
   if (img1Toggle) {
-    image(img1ToggleImage, 30, 300, 300, 500);  
+    image(img1ToggleImage, 30, 300, 300, 500);  // Display below img1
   }
 
   if (img2Toggle) {
-    image(img2ToggleImage, 175, 300, 300, 500);  
+    image(img2ToggleImage, 175, 300, 300, 500);  // Display below img2
   }
 
   if (img3Toggle) {
-    image(img3ToggleImage, 330, 300, 300, 500);  
+    image(img3ToggleImage, 330, 300, 300, 500);  // Display below img3
   }
 
   if (img4Toggle) {
-    image(img4ToggleImage, 480, 300, 300, 500); 
+    image(img4ToggleImage, 480, 300, 300, 500);  // Display below img4
   }
 
   // Display UFOs
@@ -60,23 +59,27 @@ function draw() {
 }
 
 function mousePressed() {
+  // Toggle visibility of the image below img1
+}
+
+function mousePressed() {
   // Toggle visibility for result1
-  if (mouseX >= 80 && mouseX <= 350 && mouseY >= 80 && mouseY <= 350) {
-    img1Toggle = !img1Toggle;  
+  if (mouseX >= 105 && mouseX <= 245 && mouseY >= 285 && mouseY <= 370) {
+    img1Toggle = !img1Toggle;
   }
 
   // Toggle visibility for result2
-  if (mouseX >= 175 && mouseX <= 350 && mouseY >= 175 && mouseY <= 350) {
-    img2Toggle = !img2Toggle;  
+  if (mouseX >= 260 && mouseX <= 400 && mouseY >= 320 && mouseY <= 385) {
+    img2Toggle = !img2Toggle;
   }
 
   // Toggle visibility for result3
-  if (mouseX >= 330 && mouseX <= 350 && mouseY >= 330 && mouseY <= 350) {
-    img3Toggle = !img3Toggle;  
+  if (mouseX >= 400 && mouseX <= 545 && mouseY >= 290 && mouseY <= 380) {
+    img3Toggle = !img3Toggle;
   }
 
   // Toggle visibility for result4
-  if (mouseX >= 550 && mouseX <= 350 && mouseY >= 550 && mouseY <= 350) {
-    img4Toggle = !img4Toggle;  
+  if (mouseX >= 550 && mouseX <= 690 && mouseY >= 280 && mouseY <= 380) {
+    img4Toggle = !img4Toggle;
   }
 }
